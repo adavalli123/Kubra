@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kubra/NetworkRequestor.swift"
-            timestampString = "514842711.175638"
+            timestampString = "514844297.550831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "request(url:method:params:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,13 +58,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kubra/NetworkRequestor.swift"
-            timestampString = "514843233.251204"
+            timestampString = "514844297.550831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "request(url:method:params:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kubra/NetworkRequestor.swift"
+            timestampString = "514844284.761608"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "request(url:method:params:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kubra.NetworkRequestor.(request (url : Swift.String, method : Swift.String, params : Swift.Dictionary&lt;Swift.String, Swift.String&gt;, completion : (Swift.Array&lt;Swift.Optional&lt;Kubra.DataModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()).(closure #4)"
+                  moduleName = "Kubra"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sadavalli/Documents/Tutorials/Test/Kubra/Kubra/Kubra/NetworkRequestor.swift"
+                  timestampString = "514844298.631967"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kubra.NetworkRequestor.(request (url : Swift.String, method : Swift.String, params : Swift.Dictionary&lt;Swift.String, Swift.String&gt;, completion : (Swift.Array&lt;Swift.Optional&lt;Kubra.DataModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()).(closure #4)"
+                  moduleName = "Kubra"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sadavalli/Documents/Tutorials/Test/Kubra/Kubra/Kubra/NetworkRequestor.swift"
+                  timestampString = "514844298.633571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "254">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -36,6 +36,11 @@ class NetworkRequestor {
                     // what happens if error is not nil?
                     // That means something went wrong.
                     
+                    if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                        print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                        print("response = \(response)")
+                    }
+                    
                     // Make sure there really is some data
                     if let data = data {
                         let response = try JSONSerialization.jsonObject(with: data, options:  JSONSerialization.ReadingOptions.mutableContainers)
@@ -51,12 +56,6 @@ class NetworkRequestor {
                                 
                             }
                         }
-                            
-                        else {
-                            let dataModel = DataModel(dict: resultsData as! [String : AnyObject])
-                            modelData.append(dataModel)
-                        }
-                        
                         completion(modelData, nil)
                         
                     }
