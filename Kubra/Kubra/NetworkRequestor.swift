@@ -39,18 +39,26 @@ class NetworkRequestor {
                     // Make sure there really is some data
                     if let data = data {
                         let response = try JSONSerialization.jsonObject(with: data, options:  JSONSerialization.ReadingOptions.mutableContainers)
-                        let resultsData = (response as AnyObject)                         
-                        if let responseArray = resultsData as? [[String: AnyObject]] {
-                            var modelData: [DataModel] = [DataModel]()
-                            
-                            for model in responseArray {
+                        let resultsData = (response as AnyObject)
+                        let responseArray = resultsData as? [[String: AnyObject]]
+                        var modelData: [DataModel] = [DataModel]()
+                        
+                        if let responseArrayElements = responseArray, responseArrayElements.count > 0 {
+                            for model in responseArrayElements {
                                 
                                 let dataModel = DataModel(dict: model)
                                 modelData.append(dataModel)
                                 
                             }
-                            completion(modelData, nil)
                         }
+                            
+                        else {
+                            let dataModel = DataModel(dict: resultsData as! [String : AnyObject])
+                            modelData.append(dataModel)
+                        }
+                        
+                        completion(modelData, nil)
+                        
                     }
                     else {
                         // Data is nil.

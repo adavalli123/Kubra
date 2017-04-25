@@ -53,7 +53,7 @@ extension ListViewController: UITableViewDelegate {
         let vc = getVC(fromStoryBoardName: STORYBOARD_DETAIL, withIdentifier: STORYBOARD_DETAIL) as DetailViewController
         
         if let id = dataSource[indexPath.row].id {
-            vc.id = id as? Int64
+            vc.id = id.int64Value
         }
         
         self.navigationController?.pushViewController(vc, animated: false)

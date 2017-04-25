@@ -37,6 +37,7 @@ class DataModel: NSObject {
      */
     
     var id: NSNumber?
+    var userId: NSNumber?
     var name: String?
     var username: String?
     var address: [String: AnyObject]?
